@@ -325,166 +325,223 @@ textarea{
 }
 
 
-@media screen and (max-width: 950px){
-html{
-    padding: 0px;
+@media screen and (max-width:920px){
+    html{
+        padding: 0px;
+    }
+
+    body{
+        width: 352px;
+        height: 939px;
+        margin: auto;
+    }
+
+    .logo img{
+
+        position: absolute;
+        left: 4.27%;
+        right: 87.2%;
+        top: 25%;
+        bottom: 25%;
+
+    }
+
+
+    #texto{
+
+        width: 310px;
+        height: 290px;
+        top: 152px;
+        left: 16px;
+        right: 16px;
+
+    }
+
+
+    .advertencia{
+        top: -10px;
+        left: 16px;
+
+    }
+
+
+    .rectangulo-1{
+
+        position: absolute;
+        width: 325px;
+        height: 220px;
+        left: 13px;
+        top: 707px;
+
+    }
+
+    .rectangulo-1 img{
+
+        display: none;
+    }
+
+    .rectangulo-1 #ningun-mensaje{
+
+        width: 263px;
+        height: 58px;
+        left: 32px;
+        top: 12px;
+        bottom: 96px;
+
+    }
+
+    .rectangulo-1 #ingresa-mensaje{
+        width: 263px;
+        height: 58px;
+        left: 32px;
+        top: 120px;
+        bottom: 96px
+
+    }
+
+    .rectangulo-1 #texto-codificado{
+        position: absolute;
+        width: 280px;
+        height: 99px;
+        left: 17px;
+        top: 12px;
+
+    }
+
+    .rectangulo-1 #copiar-boton{
+
+        position: absolute;
+        width: 300px;
+        height: 67px;
+        left: 16px;
+        top: 65%;
+
+    }
+
+
+    .botones{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+
+        position: absolute;
+        width: 325px;
+        height: 204px;
+        left: 16px;
+        top: 485px;
+    }
+
+    .botones .b1{
+
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        
+        position: static;
+        width: 320px;
+        height: 67px;
+        left: 0px;
+        top: 0px;
+        
+        /* Dark blue/dark-blue-300 */
+        
+        background: #0A3871;
+        border-radius: 24px;
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        margin: 24px 0px;
+
+
+    }
+
+    .botones .b2{
+
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        
+        position: static;
+        width: 320px;
+        height: 67px;
+        left: 0px;
+        top: 0px;
+        
+        /* Dark blue/dark-blue-300 */
+        
+        background:  #E5E5E5;;
+        border: 1px solid #0A3871;
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        margin: 1px 0px;
+
+    }
+
 }
 
-body{
-    width: 352px;
-    height: 939px;
-    margin: auto;
+@media screen and (min-width:1024px) and (max-width:1279px){
+
+    .botones{
+        top: 490px;
+        left: auto;
+    }
+
+    .botones .b1, .botones .b2{
+
+        width: 215px;
+    }
+
+    #texto{
+
+        width: 400px;
+        left: 13%;
+
+    }
+
+    .rectangulo-1{
+        height: 545px;
+    }
+
+    .rectangulo-1 #copiar-boton{
+        top: 450px
+    }
 }
 
-.logo img{
+@media screen and (min-width:1280px){
 
-    position: absolute;
-    left: 4.27%;
-    right: 87.2%;
-    top: 25%;
-    bottom: 25%;
+    .botones{
+        top: 650px;
+        left: 100px;
+    }
 
-}
+    .botones .b1, .botones .b2{
 
+        width: 300px;
+    }
 
-#texto{
+    #texto{
 
-    width: 310px;
-    height: 290px;
-    top: 152px;
-    left: 16px;
-    right: 16px;
+        left: 13%;
 
-}
+    }
 
+    .rectangulo-1{
+        height: 725px;
+    }
 
-.advertencia{
-    top: -10px;
-    left: 16px;
+    .rectangulo-1 #copiar-boton{
+        top: 650px
+    }
 
-}
-
-
-.rectangulo-1{
-
-    position: absolute;
-    width: 325px;
-    height: 220px;
-    left: 13px;
-    top: 707px;
-
-}
-
-.rectangulo-1 img{
-
-    display: none;
-}
-
-.rectangulo-1 #ningun-mensaje{
-
-    width: 263px;
-    height: 58px;
-    left: 32px;
-    top: 12px;
-    bottom: 96px;
-
-}
-
-.rectangulo-1 #ingresa-mensaje{
-    width: 263px;
-    height: 58px;
-    left: 32px;
-    top: 120px;
-    bottom: 96px
-
-}
-
-.rectangulo-1 #texto-codificado{
-    position: absolute;
-    width: 280px;
-    height: 99px;
-    left: 17px;
-    top: 12px;
-
-}
-
-.rectangulo-1 #copiar-boton{
-
-    position: absolute;
-    width: 300px;
-    height: 67px;
-    left: 16px;
-    top: 65%;
-
-}
-
-
-.botones{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-
-    position: absolute;
-    width: 325px;
-    height: 204px;
-    left: 16px;
-    top: 485px;
-}
-
-.botones .b1{
-
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
-    
-    position: static;
-    width: 320px;
-    height: 67px;
-    left: 0px;
-    top: 0px;
-    
-    /* Dark blue/dark-blue-300 */
-    
-    background: #0A3871;
-    border-radius: 24px;
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 24px 0px;
-
-
-}
-
-.botones .b2{
-
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
-    
-    position: static;
-    width: 320px;
-    height: 67px;
-    left: 0px;
-    top: 0px;
-    
-    /* Dark blue/dark-blue-300 */
-    
-    background:  #E5E5E5;;
-    border: 1px solid #0A3871;
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 1px 0px;
-
-}
 
 }
